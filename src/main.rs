@@ -1,3 +1,7 @@
+
+use hex;
+use dcap_rs::types::quotes::version_4::QuoteV4;
+
 #[cfg(target_os = "linux")]
 use tdx::Tdx;
 

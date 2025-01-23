@@ -2337,6 +2337,7 @@ name = "tdx-demo"
 version = "0.1.0"
 dependencies = [
  "dcap-rs",
+ "hex",
  "tdx",
 ]
 

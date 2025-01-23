@@ -8,3 +8,4 @@ tdx = { git = "https://github.com/automata-network/tdx-attestation-sdk" }
 
 [dependencies]
 dcap-rs = { git = "https://github.com/automata-network/dcap-rs.git" }
+hex = "0.4.3"
