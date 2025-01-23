@@ -21,10 +21,12 @@ pub fn tee_attestation_example() {
         "Attestation Report raw bytes: 0x{}",
         hex::encode(raw_report)
     );
-    println!("Operating System: {}", std::env::consts::OS);
+    println!("Attestation report: {:?}", attestation_report);
+    println!("Your Operating System: {}", std::env::consts::OS);
 }
 
 #[cfg(not(target_os = "linux"))]
 pub fn tee_attestation_example() {
-    println!("Operating System: {}", std::env::consts::OS);
+    println!("tdx package not compiled, only works on Linux.");
+    println!("Your Operating System: {}", std::env::consts::OS);
 }
