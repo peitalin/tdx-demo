@@ -1,0 +1,7 @@
+[package]
+name = "tdx-demo"
+version = "0.1.0"
+edition = "2021"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+tdx = { git = "https://github.com/automata-network/tdx-attestation-sdk" }
